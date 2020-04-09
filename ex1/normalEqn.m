@@ -1,0 +1,9 @@
+function [theta] = normalEqn(X, y)
+%NORMALEQN Computes the closed-form solution to linear regression 
+%   NORMALEQN(X,y) computes the closed-form solution to linear 
+%   regression using the normal equations.
+
+% Minimum Square solution for Linear Regression Problem
+theta = ((X'*X)\X')*y;
+
+end
