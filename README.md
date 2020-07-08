@@ -1,17 +1,17 @@
 ## Machine Learning - Coursera 
 
-This repository contains my solutions to the assignments from the Machine-Learning course in Coursera, taught by Andrew Ng and offered by Stanford University.
+This repository contains my solutions to the assignments from Machine-Learning course in Coursera, taught by Professor Andrew Ng and offered by Stanford University.
 
-## Content
+## Assignments
 
-- ex1: Linear Regression
-- ex2: Logistic Regression
-- ex3: Multi-class Classification and Neural Networks
-- ex4: Neural Networks Learning
-- ex5: Regularized Linear Regression and Bias vs. Variance
-- ex6: Support Vector Machines
-- ex7: K-means Clustering and Principal Component Analysis
-- ex8: Anomaly Detection and Recommender Systems
+- ex1: Linear Regression;
+- ex2: Logistic Regression;
+- ex3: Multi-class Classification and Neural Networks;
+- ex4: Neural Networks Learning;
+- ex5: Regularized Linear Regression and Bias vs. Variance;
+- ex6: Support Vector Machines;
+- ex7: K-means Clustering and Principal Component Analysis (PCA);
+- ex8: Anomaly Detection and Recommending Systems.
 
 ## How to run the files
 
