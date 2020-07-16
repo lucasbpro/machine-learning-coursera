@@ -21,7 +21,7 @@ X = [ones(m, 1), data(:,1)]; % Add a column of ones to x
 theta = zeros(2, 1); % initialize fitting parameters
 
 % Some gradient descent settings
-iterations = 400;
+iterations = 500;
 alpha = 0.01;
 
 fprintf('\nTesting the cost function ...\n')
@@ -52,6 +52,7 @@ fprintf(' -3.6303\n  1.1664\n\n');
 hold on; % keep previous plot visible
 plot(X(:,2), X*theta, '-')
 legend('Training data', 'Linear regression')
+text(16,12,['y = ' num2str(theta(1)) ' + ' num2str(theta(2)) '*x']);
 hold off % don't overlay any more plots on this figure
 
 % Predict values for population sizes of 35,000 and 70,000
@@ -83,14 +84,13 @@ for i = 1:length(theta0_vals)
     end
 end
 
-
 % Because of the way meshgrids work in the surf command, we need to
 % transpose J_vals before calling surf, or else the axes will be flipped
 J_vals = J_vals';
 % Surface plot
 figure;
 surf(theta0_vals, theta1_vals, J_vals)
-xlabel('\theta_0'); ylabel('\theta_1');
+xlabel('\theta_0'); ylabel('\theta_1'); zlabel('J_{theta}'); 
 
 % Contour plot
 figure;

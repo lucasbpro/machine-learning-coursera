@@ -22,16 +22,18 @@ As we aim to have <img src="https://render.githubusercontent.com/render/math?mat
 
 <img src="https://render.githubusercontent.com/render/math?math=J(\theta)=\frac{1}{2m}\sum%20(y-h_{\theta}(x))^2">
 
-### Gradient Descent Algorithm
-
-There are unnumbered optimization algorithms avaialable, but Gradient Descent usually stands out thanks to its simplicity and low-computational cost. 
-
-### Obtaining a Linear Model for the data
-
-<img src="./img/linear_model.png" width="500">
-
-
-### Plotting the cost function just for fun
+If we plot <img src="https://render.githubusercontent.com/render/math?math=J(\theta)"> as a function of <img src="https://render.githubusercontent.com/render/math?math=theta_{1}^"> and <img src="https://render.githubusercontent.com/render/math?math=theta_{2}^"> , we obtain a graph like the one below:
 
 <img src="./img/cost_function_3D.png" width="500">
 
+in order to find the optimal <img src="https://render.githubusercontent.com/render/math?math=theta"> vector, we shall use optimization!
+
+### Obtaining a linear model for the data
+
+There are tons of optimization algorithms, but Gradient Descent usually stands out because of its simplicity and low-computational cost. By running 500 iterations of the gradient descent, we find the optimal <img src="https://render.githubusercontent.com/render/math?math=theta"> below (see the red cross) 
+
+<img src="./img/cost_function_countour_lines.png" width="500">
+
+which yelds the the model below (blue curve):
+
+<img src="./img/linear_model.png" width="500">
