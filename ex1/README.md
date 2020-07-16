@@ -33,5 +33,5 @@ There are unnumbered optimization algorithms avaialable, but Gradient Descent us
 
 ### Plotting the cost function just for fun
 
-<img src="./img/linear_model.png" width="500">
+<img src="./img/cost_function_3D.png" width="500">
 
