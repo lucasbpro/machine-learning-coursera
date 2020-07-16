@@ -26,15 +26,15 @@ If we plot <img src="https://render.githubusercontent.com/render/math?math=J(\th
 
 <img src="./img/cost_function_3D.png" width="500">
 
-In order to find the optimal <img src="https://render.githubusercontent.com/render/math?math=theta"> vector, we shall use optimization!
+In order to find the optimal <img src="https://render.githubusercontent.com/render/math?math=\theta"> vector, we shall use optimization!
 
 ### Obtaining a linear model for the data
 
-There are tons of optimization algorithms, but Gradient Descent usually stands out because of its simplicity and low-computational cost. By running 500 iterations of the gradient descent, we find the optimal <img src="https://render.githubusercontent.com/render/math?math=theta"> below (see the red cross on the left), which yelds the the model repsented by the blue curve (on the right).
+There are tons of optimization algorithms, but Gradient Descent usually stands out because of its simplicity and low-computational cost. By running 500 iterations of the gradient descent, we find the optimal <img src="https://render.githubusercontent.com/render/math?math=\theta"> below (see the red cross on the left), which yelds the the model repsented by the blue curve (on the right).
 
 <p float="left">
-  <img src="./img/cost_function_countour_lines.png" width="400">
-  <img src="./img/linear_model.png" width="400">
+  <img src="./img/cost_function_countour_lines.png" width="450">
+  <img src="./img/linear_model.png" width="450">
 </p>
 
 
