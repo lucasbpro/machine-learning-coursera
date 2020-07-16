@@ -22,7 +22,7 @@ As we aim to have <img src="https://render.githubusercontent.com/render/math?mat
 
 <img src="https://render.githubusercontent.com/render/math?math=J(\theta)=\frac{1}{2m}\sum%20(y-h_{\theta}(x))^2">
 
-If we plot <img src="https://render.githubusercontent.com/render/math?math=J(\theta)"> as a function of <img src="https://render.githubusercontent.com/render/math?math=theta_{1}"> and <img src="https://render.githubusercontent.com/render/math?math=theta_{2}"> , we obtain a graph like the one below:
+If we plot <img src="https://render.githubusercontent.com/render/math?math=J(\theta)"> as a function of <img src="https://render.githubusercontent.com/render/math?math=\theta_{1}"> and <img src="https://render.githubusercontent.com/render/math?math=\theta_{2}"> , we obtain a graph like the one below:
 
 <img src="./img/cost_function_3D.png" width="500">
 
