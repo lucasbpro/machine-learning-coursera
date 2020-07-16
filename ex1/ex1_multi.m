@@ -57,28 +57,6 @@ X = [ones(m, 1) X];
 
 %% ================ Part 2: Gradient Descent ================
 
-% ====================== YOUR CODE HERE ======================
-% Instructions: We have provided you with the following starter
-%               code that runs gradient descent with a particular
-%               learning rate (alpha). 
-%
-%               Your task is to first make sure that your functions - 
-%               computeCost and gradientDescent already work with 
-%               this starter code and support multiple variables.
-%
-%               After that, try running gradient descent with 
-%               different values of alpha and see which one gives
-%               you the best result.
-%
-%               Finally, you should complete the code at the end
-%               to predict the price of a 1650 sq-ft, 3 br house.
-%
-% Hint: By using the 'hold on' command, you can plot multiple
-%       graphs on the same figure.
-%
-% Hint: At prediction, make sure you do the same feature normalization.
-%
-
 fprintf('Running gradient descent ...\n');
 
 % Choose some alpha value
@@ -92,13 +70,11 @@ theta = zeros(3, 1);
 % Plot the convergence graph
 figure;
 plot(1:numel(J_history), J_history, '-b', 'LineWidth', 2);
-xlabel('Number of iterations');
-ylabel('Cost J');
+xlabel('Number of iterations'); ylabel('Cost J'); grid on;
 
 % Display gradient descent's result
 fprintf('Theta computed from gradient descent: \n');
-fprintf(' %f \n', theta);
-fprintf('\n');
+fprintf(' %f \n', theta); fprintf('\n'); 
 
 % Estimate the price of a 1650 sq-ft, 3 br house
 X = [1 1650 3];
@@ -117,17 +93,7 @@ pause;
 
 fprintf('Solving with normal equations...\n');
 
-% ====================== YOUR CODE HERE ======================
-% Instructions: The following code computes the closed form 
-%               solution for linear regression using the normal
-%               equations. You should complete the code in 
-%               normalEqn.m
-%
-%               After doing so, you should complete this code 
-%               to predict the price of a 1650 sq-ft, 3 br house.
-%
-
-%% Load Data
+% Load Data
 data = csvread('ex1data2.txt');
 X = data(:, 1:2);
 y = data(:, 3);
@@ -144,12 +110,9 @@ fprintf('Theta computed from the normal equations: \n');
 fprintf(' %f \n', theta);
 fprintf('\n');
 
-
 % Estimate the price of a 1650 sq-ft, 3 br house
 X = [1 1650 3];
 price = X*theta;
-
-% ============================================================
 
 fprintf(['Predicted price of a 1650 sq-ft, 3 br house ' ...
          '(using normal equations):\n $%f\n'], price);

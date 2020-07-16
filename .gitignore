@@ -1,4 +1,5 @@
 lib/
 token*
 submit*
-*.pdf
+*.pdf\
+*.asv
